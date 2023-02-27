@@ -114,10 +114,10 @@ bool TZUiSchedulerSwitch(int page) {
         }
     }
     // ÇĞ»»Ò³Ãæ
-    item = (tItem*)node->Data;
-    item->open();
     gPrevPage = gCurrentPage;
     gCurrentPage = page;
+    item = (tItem*)node->Data;
+    item->open();
     return true;
 }
 
